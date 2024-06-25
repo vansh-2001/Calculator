@@ -1,15 +1,57 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  
-  
-  <div>lkdnc</div>
+
+
+  <section class=" bg-cyan-300 w-[100%] h-screen place-content-center items-center flex">
+    <div class="p-5 place-content-center bg-slate-100  w-[18rem] rounded-xl shadow-2xl flex content-center text-center items-center" >
+      <form action="">
+        <div>
+          <input class="bg-slate-300 rounded-lg w-[14.2rem] h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3 placeholder:text-slate-900" type="text" name="display" placeholder="0"  disabled>
+        </div>
+        <div>
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="AC" onclick="display.value = '' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="DE" onclick=" display.value = display.value.toString().slice(0,-1) ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="." onclick="display.value += '' + '.' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="/" onclick="display.value += '/' ">
+        </div>
+        <div>
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="7" onclick="display.value += '7' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="8" onclick="display.value += '8' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="9" onclick="display.value += '9' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="*" onclick="display.value += '*' ">
+        </div>
+        <div>
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="4" onclick="display.value += '4' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="5" onclick="display.value += '5' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="6" onclick="display.value += '6' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="-" onclick="display.value += '-' ">
+        </div>
+        <div>
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="1" onclick="display.value += '1' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="2" onclick="display.value += '2' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="3" onclick="display.value += '3' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="+" onclick="display.value += '+' ">
+        </div>
+        <div>
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="00" onclick="display.value += '00' ">
+          <input class="bg-slate-300 rounded-lg w-12 h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="0" onclick="display.value += '0' ">
+          <input class="bg-slate-300 rounded-lg w-[6.7rem] h-12 shadow-slate-500 shadow-sm hover:opacity-90 m-1 p-3" type="button" value="=" onclick="display.value = eval(display.value) ">
+        </div>
+      </form>
+
+    </div>
+
+  </section>
 
 
 </body>
+
 </html>
